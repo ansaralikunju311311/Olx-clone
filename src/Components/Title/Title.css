@@ -1,0 +1,27 @@
+.title
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(245, 242, 240);
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.category 
+{
+    display: flex;
+    align-items: center;
+}
+.category p{
+    font-size: 14px;
+}
+ul{
+    display: flex;
+    gap: 10px;
+}
+ul li
+{
+    list-style: none;
+    font-weight: lighter;
+    font-size: 13px;
+}
