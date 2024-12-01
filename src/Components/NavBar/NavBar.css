@@ -1,108 +1,153 @@
 .navbar {
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #f8f9fa;
-    border-bottom: 1px solid #ddd;
-    font-family: Arial, sans-serif;
-    gap: 15px; 
-  }
-  
-  .navbar-logo img {
-    height: 35px;
-  }
-  
-  .navbar-location {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    border: 2px solid #0f0e0e;
-    padding: 5px 10px;
-    margin-left: 30px;
-    height: 26px;
-    
-  }
-  
-  .location-input {
-    border: none;
-    outline: none;
-    font-size: 14px;
-    width: 190px;
-    background-color: transparent;
-  }
-  
-  .navbar-search {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    border: 2px solid #0f0e0e;
-    padding: 5px;
-    
-    margin-left: 50px;
-    
-    width: 61%; 
-  }
-  
-  .search-input {
-    flex: 1;
-    border: none;
-    outline: none;
-    font-size: 14px;
-    padding: 5px;
-    background-color: transparent;
-    
-  }
-  
-  .search-icon {
-    width: 18px;
-    cursor: pointer;
-  }
-  
-  .navbar-language {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-    margin-left: 20px;
-  }
-  
-  .navbar-language p {
-    margin: 0;
-    font-size: 14px;
-    font-weight: 600;
-  }
-  
-  .dropdown-icon {
-    font-size: 17px;
-  }
-  
-  .navbar-options {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-  }
-  
-  .login {
-    font-size: 14px;
-    cursor: pointer;
-    color: #060c11;
-    text-decoration: underline;
-    font-weight: 600;
-  }
-  
-  .sell-button {
-    
-    padding: 5px 10px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    cursor: pointer;
-    
-  }
-  
-  .sell-button img {
-    width: 65px;
-    height: 40px;
-  }
-  
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+  font-family: Arial, sans-serif;
+  gap: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.navbar-logo img {
+  height: 35px;
+  transition: transform 0.2s ease;
+}
+
+.navbar-logo img:hover {
+  transform: scale(1.05);
+}
+
+.navbar-location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 2px solid #0f0e0e;
+  padding: 5px 10px;
+  margin-left: 30px;
+  height: 26px;
+  transition: all 0.2s ease;
+}
+
+.navbar-location:hover {
+  border-color: #00434b;
+  box-shadow: 0 0 0 2px rgba(0, 47, 52, 0.1);
+}
+
+.location-input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  width: 190px;
+  background-color: transparent;
+  color: #002f34;
+}
+
+.navbar-search {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 2px solid #0f0e0e;
+  padding: 5px;
+  margin-left: 50px;
+  width: 61%; 
+  transition: all 0.2s ease;
+}
+
+.navbar-search:hover {
+  border-color: #00434b;
+  box-shadow: 0 0 0 2px rgba(0, 47, 52, 0.1);
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 5px;
+  background-color: transparent;
+  color: #002f34;
+}
+
+.search-input::placeholder {
+  color: #666;
+}
+
+.search-icon {
+  width: 18px;
+  cursor: pointer;
+  color: #002f34;
+  transition: color 0.2s ease;
+}
+
+.search-icon:hover {
+  color: #00434b;
+}
+
+.navbar-language {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  margin-left: 20px;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.navbar-language:hover {
+  background-color: rgba(0, 47, 52, 0.07);
+}
+
+.navbar-language p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #002f34;
+}
+
+.dropdown-icon {
+  font-size: 17px;
+  color: #002f34;
+}
+
+.navbar-options {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: auto;
+}
+
+.login {
+  font-size: 14px;
+  cursor: pointer;
+  color: #060c11;
+  text-decoration: underline;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.login:hover {
+  background-color: rgba(0, 47, 52, 0.07);
+}
+
+.sell-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.sell-button img {
+  width: 65px;
+  height: 40px;
+  object-fit: contain;
+}
