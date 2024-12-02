@@ -131,6 +131,14 @@
     font-weight: 500;
 }
 
+.error {
+    color: #e41717;
+    font-size: 12px;
+    margin-top: -15px;
+    margin-bottom: -5px;
+    padding-left: 4px;
+}
+
 /* Responsive Design */
 @media (max-width: 480px) {
     .signup {

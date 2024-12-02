@@ -10,7 +10,6 @@ import './NavBar.css';
 const NavBar = () => {
   return (
     <div className='navbar'>
-      {/* Logo */}
       <div className='navbar-logo'>
         <img src={olxlogo} alt="OLX Logo" />
       </div>
