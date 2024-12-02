@@ -34,7 +34,7 @@ const NavBar = () => {
       </div>
 
       <div className='navbar-options'>
-        <p className='login'>Login</p>
+        <p className='Navbar-login'>Login</p>
         <div className='sell-button'>
           <img src={sell} alt="Sell" />
         </div>
