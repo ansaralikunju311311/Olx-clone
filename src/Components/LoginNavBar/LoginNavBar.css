@@ -1,0 +1,217 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+    gap: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-logo img {
+    height: 35px;
+    transition: transform 0.2s ease;
+  }
+  
+  .navbar-logo img:hover {
+    transform: scale(1.1);
+  }
+  
+  .navbar-location {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-location:hover {
+    border-color: #00434b;
+    box-shadow: 0 0 4px rgba(0, 67, 75, 0.2);
+  }
+  
+  .location-input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    width: 180px;
+    background-color: transparent;
+    color: #333;
+  }
+  
+  .navbar-search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 5px;
+    flex: 1;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-search:hover {
+    border-color: #00434b;
+    box-shadow: 0 0 4px rgba(0, 67, 75, 0.2);
+  }
+  
+  .search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background-color: transparent;
+    color: #333;
+  }
+  
+  .search-input::placeholder {
+    color: #888;
+  }
+  
+  .search-icon {
+    font-size: 18px;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .search-icon:hover {
+    color: #00434b;
+  }
+  
+  .navbar-language {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-language:hover {
+    background-color: rgba(0, 67, 75, 0.1);
+  }
+  
+  .navbar-language p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .dropdown-icon {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .navbar-options {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 15px;
+  }
+  
+  .Navbar-login {
+    font-size: 14px;
+    color: #00434b;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .Navbar-login:hover {
+    background-color: rgba(0, 67, 75, 0.1);
+  }
+  
+  .sell-button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 5px;
+    /* background-color: #00434b; */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sell-button img {
+    width: 65px;
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  .sell-button:hover {
+    background-color: #00667b;
+  }
+  
+  .navbar-profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-profile:hover {
+    background-color: rgba(0, 67, 75, 0.1);
+  }
+  
+  .profile-icon {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .notification-icon,
+  .message-icon {
+    font-size: 18px;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .notification-icon:hover,
+  .message-icon:hover {
+    color: #00434b;
+  }
+  
+  .profile-signlogin {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1100;
+  }
+  
+  .profile-login button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #00434b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .profile-login button:hover {
+    background-color: #00667b;
+  }
+  
