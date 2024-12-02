@@ -1,3 +1,4 @@
+import { useCallback } from 'react'
 import React from 'react'
 import adbanner from '../../assets/adbanner.png'
 import './Banner.css'
